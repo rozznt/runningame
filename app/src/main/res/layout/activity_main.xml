@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/ok"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:fontFamily="sans-serif-light"
+        android:text="10"
+        android:textColor="#57C01E"
+        android:textSize="30sp"
+
+
+        android:textStyle="bold"
+        app:fontFamily="@font/alfa_slab_one" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginLeft="20dp"
+        android:text="(Your point)"
+        android:textColor="#9514DB"
+        android:textSize="20sp"
+        app:fontFamily="@font/architects_daughter" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:text="Runin"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:fontFamily="@font/allura"
+        android:textColor="#00FFB7"/>
+
+    <TextView
+        android:layout_width="165dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Game"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textColor="#E8B7D596"
+        app:fontFamily="@font/shadows_into_light" />
+
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="7dp"
+
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox3"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="7dp"
+
+
+         />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="7dp"
+
+
+        />
+
+
+    <SeekBar
+
+        android:id="@+id/seekBar1"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar2"
+        android:progressDrawable="@android:color/transparent"
+
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/checkBox"
+        android:thumb="@drawable/sonic" />
+
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:progressDrawable="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar3"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/checkBox2"
+        android:thumb="@drawable/pika1"
+
+
+        />
+
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checkBox3"
+        android:layout_marginLeft="10dp"
+
+
+
+        android:thumb="@drawable/dr1" />
+
+    <pl.droidsonroids.gif.GifImageButton
+        android:id="@+id/frog"
+        android:layout_width="123dp"
+        android:layout_height="171dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="450dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:src="@drawable/forgg" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/txt1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:text="Reset"
+        android:textColor="#CD195D97" />
+
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="131dp"
+        android:layout_height="119dp"
+        android:background="@null"
+        android:src="@drawable/play"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+
+
+        android:layout_below="@+id/frog"
+        android:layout_marginLeft="-89dp"
+        android:layout_marginTop="-9dp"
+        android:layout_toRightOf="@+id/reset"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:text="Quit"
+        android:textColor="#AC080D" />
+
+
+</RelativeLayout>
+
+
